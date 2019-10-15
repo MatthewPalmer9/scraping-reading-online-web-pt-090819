@@ -3,5 +3,5 @@ require 'open-uri'
 require 'pry'
 
 html = open("https://flatironschool.com/")
-html
+doc = Nokogiri::HTML(html)
 binding.pry
